@@ -1,0 +1,134 @@
+body{
+  background-size: cover;
+  background-color: #1e1e1e;
+}
+
+a {
+  color: #fffdfd;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  color: #dddddd ;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(54, 53, 53);
+  color: white;
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #24252A;
+  padding-right: 10px;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+}
+
+.search{
+  margin-right: 10px;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 10pt;
+}
+
+.logo{
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.name{
+  display:inline-flex;
+  align-items: center;
+  
+}
+
+.nav__links{
+  margin-right: 5%;
+  display: inline-flex;
+  list-style: none;
+}
+.nav__links li{
+  display: inline-flex;
+  padding: 0px 20px;
+  
+}
+.nav__links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+   color: #0088a9;
+}
+
+button{
+  padding: 7px 10px;
+  background-color: rgb(9, 178, 221);
+  border: none;
+  border-radius: 20px ;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: rgba(0,136,169,0.8)
+}
+h1{
+  color: #edf0f1;
+  margin-left: 10%;
+  font-size: 25px;    
+}
+
+.footer {
+  margin-top: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(54, 53, 53);
+  color: white;
+  text-align: center;
+  
+}
+.abs{
+  margin-right: auto;
+  display: flex;
+}
+

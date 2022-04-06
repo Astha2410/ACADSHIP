@@ -1,0 +1,7 @@
+input[type=text], input[type=email], textarea {
+    width: 50vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border-radius: 25px;
+   }

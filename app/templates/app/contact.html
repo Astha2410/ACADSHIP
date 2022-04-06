@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Acadship</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'app/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'app/assets/css/templatemo-eduwell-style.css' %}">
+    <link rel="stylesheet" href="{% static 'app/assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'app/assets/css/lightbox.css' %}">
+    <link rel="stylesheet" href="{% static 'app/contact.css' %}">
+    <style>
+      .heading{
+    text-align: center;
+    margin: 3% 0px 3% 0px ;
+    font-size: 60px;
+}
+.image{
+    height: 400px;
+    width: 400px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.input{
+    display: none;
+    color: transparent;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+}
+
+label{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="{% url 'landing' %}" class="logo">
+                            <img src="{% static 'app/assets/images/templatemo-eduwell.png' %}" alt="EduWell Template" width="60" height="60">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="{% url 'index' %}" class="active">Scholarships</a></li>
+                            <li><a href = "{% url 'contact'%}">Give Scholarship</a></li>
+                            <li><a href="{% url 'about' %}">About Us</a></li>
+                            <li><a href="{% url 'contact'%}">Contact Us</a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="heading" style = "margin-top: 150px;">Post your queries here </h1>
+
+    <div class="main">
+        <img src ="{% static 'app/images/letters.png' %}" class="image">
+
+        <form action="" method = "post">
+            {% csrf_token %}
+            {{ form }}
+            <button class="btn"><input class="input" type = "submit" value = "Submit"><h2>Submit</h2></button>
+        </form> 
+    </div>
+</body>
+<footer style="    margin-top: 20px;
+left: 0;
+bottom: 0;
+width: 100%;
+text-align: center;">Made with ❤️ at VIT Bhopal @2022</footer>
+</html>

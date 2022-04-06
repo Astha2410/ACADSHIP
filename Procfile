@@ -1,0 +1,1 @@
+web: gunicorn acadship.wsgi --log-file -
